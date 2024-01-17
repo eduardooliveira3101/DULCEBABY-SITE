@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  color: #263138;
+  font-size: 1.2rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #85ede8;
+  padding: .95rem 7rem;
+}
+
+header nav {
+  display: flex;
+  gap: 5rem;
+  font-size: 1.6rem;
+}
+
+header nav a {
+  color: #FFFFFF;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .9s;
+}
+
+header nav a:hover {
+  scale: 1.6;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.logoB {
+  height: 120px;
+}
+
+#inicio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 3.2rem;
+  padding: 2.4rem 8rem 12rem 8rem;
+
+  position: relative;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+  font-size: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.paragrafo {
+  margin-bottom: 3.2rem;
+  line-height: 150%;
+  font-size: 1.5rem;
+}
+
+.botao {
+  background-color: #85ede8 ;
+  padding: 1.5rem;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: .5s;
+  font-weight: bold;
+  margin-left: 15rem;
+
+}
+
+.botao:hover {
+  background-color: #50b7b1 ;
+}
+
+.botao-transparente {
+  padding: 1.2rem;
+  margin-left: 2rem;
+  color: #FF9A6C;
+}
+
+.absolut {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -10;
+}
+
+#quemsomosnos, #duvidas {
+  display: flex;
+  align-items: center;
+  gap: 6.4rem;
+  padding: 6.4rem 8rem;
+}
+
+#quemsomosnos li {
+  margin-bottom: 1.6rem;
+  margin-left: 2.5rem; 
+}
+
+#encomendas {
+  padding: 6.4rem 8rem;
+  text-align: center;
+}
+
+#encomendas img {
+  margin: 2rem auto;
+}
+
+#encomendas .paragrafo {
+  max-width: 95rem;
+  margin-inline: auto;
+}
+
+.duvida {
+  position: relative;
+}
+
+.duvida h3 {
+  border: 2px solid #85ede8;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 2.4rem;
+}
+
+.duvida img {
+  position: absolute;
+  top: 3.2rem;
+  right: 2.4rem;
+}
+
+.duvida .paragrafo {
+  border-right: 1px solid #85ede8;
+  border-bottom: 1px solid #85ede8;
+  border-left: 1px solid #85ede8;
+  border-radius: 0 0 8px 8px;
+  margin-top: -8px;
+  padding: 0 2.4rem;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: .6s;
+}
+
+.duvida.ativa 
+.paragrafo {
+  height: fit-content;
+  opacity: 1;
+  padding: 2.4rem;
+}
+
+footer {
+  background-color: #85ede8;
+  display: flex;
+  gap: 8rem;
+  padding: 6.4rem 8rem;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
+footer img, 
+footer .titulo {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+
+}
+
+footer nav a {
+  color: #263138;
+  display: block;
+  margin-bottom: 1.6rem;
+  text-decoration: none;
+
+}
+
+footer p a {
+  color: #100dd1;
+  text-decoration: none;
+  text-decoration: dashed;
+}
+
+footer p {
+  margin-bottom: 1.6rem;
+  max-width: 35rem;
+}
+
+.copyright {
+  background-color: #09151d;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 2rem;
+}
+
+.copyright a {
+  color: #FF725E;
+  text-decoration: none;
+}
